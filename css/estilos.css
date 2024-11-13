@@ -1,0 +1,638 @@
+
+/* hojas de eslitos externas */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* vincular las hojas de estilos  con la biblioteca de iconos de fontawesome6.6 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+/* declarar variables */
+:root {
+/* PALETA DE COLORES */
+        --color1: #ff5351;
+        --color2: #FFFFFF;
+        --color3: #171821;
+        --color4: #454545;
+        --color5: #000000;
+        --color6: #A4ACB3;
+        --color7: #212129;
+        --color8: #181921;
+        --fondo-Mo: rgba(255, 84, 81, 0.502);
+
+    /* tipos de fuentes */
+    --fuente1: "Poppins", sans-serif;
+    --fuente2: "Open Sans", sans-serif;
+    --fuente3: "Roboto", sans-serif;
+    /* gradientes */
+    --gradiente1: linear-gradient(99deg, rgba(23,24,33,0.7) 50%, rgba(255,255,255,0.7) 100%);
+}
+/* regla para afectar  todos los elementos de la pagina html (selector universal)   */
+*{
+    /* eliminar los espacios y margenes predetermidaos */
+    padding: 0;
+    margin: 0;
+    /* evita que el padding  y el borde afecten el tamaño de la caja  */
+    box-sizing: border-box;
+}
+/* suavizar el desplamiento del scroll  */
+html{
+     scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--fuente3);
+    font-size: 15px  ;
+    line-height: 1.5;
+  
+   
+}
+
+
+h2{
+    letter-spacing: 5px;
+    font-family: var(--fuente2);
+    margin-bottom: 20px;
+    
+}
+
+p{
+    font-family: var(--fuente2);
+    margin-bottom: 10px;
+}
+img{
+    display: block;
+    border: none;
+}
+a{
+    text-decoration: none; /*eliminar el subrayado del texto*/
+}
+#barra-superior{
+    background-color: var(--color5);
+    color: var(--color2);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+   
+    
+}
+#barra-superior .row{
+    justify-content: space-between;
+    align-items: center;
+}
+#barra-superior a{
+    text-decoration: none;
+    color: var(--color2);
+    margin-right: 15px;
+}
+
+#cabecera{
+    background-color: var(--color8);
+    color: var(--color4);
+    /* espaciado de cabecera */
+    padding-top: 20px;
+    padding-bottom: 20px;
+ 
+    
+
+    position: sticky;
+    top: -1px;
+    z-index: 100;
+}
+
+#banner{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+#Nosotros {
+    color: var(--color2);
+    background-color: var(--color3);
+}
+#muebles{
+    color: var(--color5);
+    background-color: var(--color2);
+}
+
+#Muebles_en_oferta{
+    color: var(--color6);
+    background-color: var(--color7)
+}
+#Muebles_en_oferta .col:hover .Muebles-hijo{
+    /* text-align: center;
+    margin-bottom: 30px; */
+    opacity: 1;
+}
+#Muebles_en_oferta .col p {
+    transform: translate(-200px);
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    top: calc(50% - 1em);
+}
+#Muebles_en_oferta .col:hover p{
+    transform: translateX(0);
+}
+#Muebles_en_oferta .col img {
+    transform: scale(100%);
+    transition: all 0.4s ease-in-out;
+        
+}
+#Muebles_en_oferta .col:hover img{
+    transform: scale(110%);
+    
+}   
+
+#Servicios{
+    color: var(--color4);
+    background-color:var(--color2);
+}
+#Personalizacion{
+    color: var(--color5);
+    background-color: var(--color2);
+}
+#Colaboradores{
+    color: var(--color6);
+    background-color:var(--color7);
+}
+#Colaboradores .col{
+    margin-bottom: 30px;
+}
+
+#Ubicanos{
+    color: var(--color2);
+    background-color: var(--color7);
+}
+#pie{
+    color:var(--color2);
+    background-color:var(--color7);
+}
+#pie .row{
+    justify-content: space-between;
+}
+#pie a{
+    color: var(--color2);
+}
+#titulo-pagina{
+    background: var(--gradiente1), url('../css/imagenes/banner.jpg');
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center ;
+    color: var(--color2);
+}
+#titulo-pagina a{
+    color: var(--color2);
+}
+#porque-elegirnos {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+/* estilo para el titulo*/
+#porque-elegirnos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+/* CLASES */
+
+.espaciado{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.contenedor{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.con-linea{
+    border-top: 1px solid var(--color6);
+    
+    padding: 40px 0px;
+}
+.con-linea2{
+    border-top: 1px solid var(--color6);
+    border-bottom: 1px solid var(--color6);
+    
+    padding: 1px 0px;
+}
+/* ajusta el ancho de la imagen */
+.imgfluid{
+    width: 100%;
+}
+.img{
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+}
+/* flexbox */
+
+.row {
+    display: flex;
+    flex-direction: row; /*las cajas hijsas se mostraran en forma de filas*/
+    flex-wrap: wrap;/*alineacion con salto de fila*/
+}
+.del-padded{
+     /* eliminar el padding left de la primera caja hijo y el pading right de la última caja hijo */
+     margin-left: -15px;
+     margin-right: -15px;
+}
+/* para que las columnas tengan el mismo ancho */
+.col{
+     flex-basis: 0;
+    flex-grow: 1;
+     /* espacio entre columnas  */
+     padding-left: 15px; 
+    padding-right: 15px;
+}
+/* para repartir el espacio del flexbox en 3 columnas */
+.col-33{
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+
+}
+.col-25{
+    flex-basis: 25%;
+    max-width: 25%;
+}
+.col-50{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.col-66{
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+}
+.col-75{
+    flex-basis: 75%;
+    max-width: 75%;
+}
+.col-100{
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.fondo-muebelesamedida{
+    background-image: url(imagenes/mueblesamedida.jpg);
+    background-repeat: no-repeat ; 
+    background-size: cover; 
+}
+.fondo-nosotros{
+    background-image: url(imagenes/nosotros.jpg);
+    background-repeat: no-repeat ; 
+    background-size: cover;
+}
+.titulo-muebelesamedida{
+    text-align: right;
+    color: var(--color6);
+    font-size: 40px;
+    padding-top:  220px;
+}
+.fondo-personalizacion{
+    background: var(--gradiente1), url('../css/imagenes/PORTADA-POST5.jpg');
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed; /*fijar la imagen*/ 
+    background-position: center right;
+   
+}
+.texto-personalizacion{
+    font-size: 3em;
+    line-height: 2em;
+    color: var(--color6);
+}
+.texto-resaltado{
+    color: var(--color1);
+    font-weight: bold;
+}
+.texto-resaltado2{
+    display: grid;
+    place-items: center;
+    color: var(--color4);
+    font-size: 36px;
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* estilos exclusivos para la barra de navegacion */
+/* /////////////////////////////////////////////////////////// */
+.nav-bar{
+    /* barra principal de navegacion */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*alineacion horizontal de los elementos*/
+    align-items: center; /*alineacion vertical de los elementos*/
+
+}
+.nav-logo{
+    max-width:200px;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;/*quita los marcadores de viñetas*/
+}
+.nav-menu-item{
+    margin-left: 10px;/*espaciado de los enlaces*/
+
+}
+.nav-menu-link{
+    text-decoration: none;
+    color: var(--color6);
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.nav-menu-link:hover{
+    color: var(--color1);
+    background-color: var(--color5);
+    border-radius: 15px;
+}
+/* finde estilo de barra de navegacion */
+.icono-rs{
+    font-size: 2em;
+    margin-left: 15px;
+    color: var(--color2);
+}
+.icono-rs:hover{
+    color: var(--color1);
+}
+/* /////////////////////////////////////////////////////////// */
+/* estilo para posicionmiento de  cajas */
+/* /////////////////////////////////////////////////////////// */
+.caja-1{
+    position: relative;
+}
+.caja-1_2{
+    position: absolute;
+    width: 400px;
+    background-color: var(--color2);
+    color: var(--color3);
+    padding: 30px;
+    /* cordenadas de posicionamiento (left top botton right) */
+    /* top: 0px; */
+    /* left: 0px; */
+    left: calc(85% - 300px);
+}
+
+.Muebles-padre{
+    position: relative;
+    
+    
+}
+.Muebles-hijo{
+    position: absolute;
+    background-color: var(--fondo-Mo);
+    color: var(--color2);
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+    opacity: 0;/* Oculta la caja */
+
+    transition: all 0.3s ease-in-out;
+    /* cordenadas de posicionamiento */
+    top: 0px;   
+    left: 0px;
+    transition: all 0.4s ease-in-out;
+}
+.centrar-texto{
+    text-align: center;
+}
+/* oculta el desborde de una caja */
+.ocultar-desborde{
+    overflow: hidden;
+}
+.scroll-up{
+
+    width: 45px;
+    height: 45px;
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align: center;
+    line-height: 45px;
+    font-size: 1em;
+    /* posicionamiento del boton */
+    position: fixed;
+    bottom: 33px;
+    right: 15px;  
+    border-radius: 7px;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5); 
+}
+.pagina-activa{
+    background-color: var(--color1);
+    color: var(--color2);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* estilos para formulario */
+.form-control{
+    border: none;
+    outline: none; 
+    border-bottom: 1px solid var(--color1);
+    color: var(--color6);
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 0px;
+    font: inherits; 
+
+}
+.form-button{
+    background-color: var(--color1);
+    color: var(--color2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font: inherit;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+.form-button:hover{
+    background-color: var(--color6);
+    transform: translateY(-7px);
+}
+
+.form-contacto a{
+    text-decoration: none;
+    color: var(--color1);
+
+}
+.form-contacto textarea{
+    resize: vertical;
+}
+
+.ajustar-video{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; /*mantiene la relación de aspecto*/
+}
+
+/* /////////////////////////////////////// */
+
+/* Fondo y estilos generales */
+.nuevos-muebles {
+    background: url('imagenes/nuevosmuebles.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Estilos del contenido */
+  .nuevos-muebles .contenedor1 {
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  /* Título */
+  .nuevos-muebles h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Descripción */
+  .nuevos-muebles p {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  
+  /* Botón */
+  .nuevos-muebles .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:var(--color1);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nuevos-muebles .button:hover {
+    background-color: var(--color5);
+  }
+  /* ////////////////////////////// */
+  .contacto-info {
+    background-color: var(--color1); /* Fondo morado */
+    color: #fff;
+    padding: 20px;
+    
+}
+
+.contacto-item {
+    display: flex;            /* Alinea los íconos y el texto en una fila */
+    align-items: flex-start;   /* Alinea los íconos con el inicio del texto */
+    margin-bottom: 20px;
+}
+
+.contacto-item i {
+    font-size: 1.5em;
+    color: #fff;
+    margin-right: 30px;        /* Espacio entre el ícono y el texto */
+}
+
+.contacto-item h4 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.contacto-item p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+
+
+
+.redes-sociales {
+    background-color: var(--color1); /* Color de fondo turquesa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    color: #fff;
+}
+
+.redes-sociales a {
+    color: #fff; /* Color de los íconos */
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.redes-sociales a:hover {
+    color: #f1f1f1; /* Color al pasar el mouse */
+}
+
+/* Estilo para la fila de redes sociales */
+.row3 {
+    display: flex;
+}
+
+.col--25 {
+    width: 25%; /* Cada columna ocupa el 25% del ancho */
+    box-sizing: border-box;
+    border-right: 2px solid #fff; /* Línea de separación entre íconos */
+}
+
+/* Remover la última línea de separación */
+.col--25:last-child {
+    border-right: none;
+}
+
+
+/* Estilos para la sección "¿Por qué elegirnos?" */
+
+
+
+.contenedor2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.col--50 {
+    flex: 1 1 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.feature i {
+    font-size: 2em;
+    color: var(--color1);
+    margin-right: 15px;
+}
+
+.feature h4 {
+    font-size: 1.2em;
+    margin: 0 0 5px;
+    color: #333;
+}
+
+.feature p {
+    margin: 0;
+    color: #666;
+}
+
+
+.video-container iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; /* Mantiene la proporción 16:9 */
+}

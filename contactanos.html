@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muebles Maldonado</title>
+    <!-- enlazar html con favicon -->
+    <link rel="shortcut icon" href="css/imagenes/favicon.ico" type="image/x-icon">
+
+    <!-- Vinculación del archivo HTML con la hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- barra superior -->
+    <header id="barra-superior">
+        <div class="contenedor">
+            <div class="row">
+                <div class="bs-contactos">
+                    <a href="tel:998 199 406"><i class="fa-solid fa-phone fa-rotate-270 " style="color: #ff5351;"></i>
+                        998 199 406 </a>
+                    <a href="mailto:informes@mueblesmaldonado.com"> <i class="fa-regular fa-envelope"
+                            style="color: #ff5351;"></i> informes@mueblesmaldonado.com</a>
+                    <samp> <i class="fa-regular fa-clock" style="color: #ff5351;"></i> Lun -Sab: 10:00 a.m.6:00 p.m.
+                    </samp>
+                </div>
+
+                <div class="bs-rs">
+                    <a title="Siguenos en Facebook" href="https://www.facebook.com/muebles.maldonado" target="_blank"><i
+                            class="fa-brands fa-facebook "></i></a>
+                    <a title="Siguenos en Instagram" href="https://www.instagram.com/muebles.maldonado/?hl=es"
+                        target="_blank"><i class="fa-brands fa-instagram "></i></a>
+                    <a title="Siguenos en Youtube" href="https://www.youtube.com/@mueblesmaldonado3211"
+                        target="_blank"><i class="fa-brands fa-youtube "></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cabecera de la página -->
+    <header id="cabecera">
+        <div class="contenedor">
+            <!-- barra de navegacion: contiene el logo y lo enlaces de navegacion -->
+            <nav class="nav-bar">
+                <!-- contien el logo  -->
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img class="imgfluid" src="css/imagenes/logo3.png">
+                    </a>
+                    <!-- coniene el menu -->
+                </div>
+                <!-- elementos del menu -->
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="index.html"> <i class="fa-solid fa-house"></i> Inicio</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="categorias.html">Categorias</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link pagina-activa" href="contactanos.html">Contáctanos</a>
+                    </li>
+
+                </ul><!-- cierra el nav-menu -->
+            </nav><!-- cierra el nav-bar -->
+
+            <!-- <h1> Muebles Maldonado</h1> -->
+        </div>
+    </header>
+
+    <!-- titulo de pagina interna -->
+    <section id="titulo-pagina" class="espaciado">
+        <div class="contenedor">
+            <h2>Contáctanos</h2>
+            <span><i class="fa-solid fa-location-dot"></i> <a href="index.html">inicio</a> / Contáctanos</span>
+        </div>
+    </section>
+
+
+    <!-- formulario de contacto -->
+    <section id="contactanos" class="espaciado">
+        <div class="contenedor">
+            <h3>Formulario de contacto</h3>
+            <h2>Te responderemos en menos de 24 horas</h2>
+            <div class="row del-padded">
+                <div class="col col-66">
+                    <!-- Formulario de contacto -->
+                    <form action="registrar.php" class="form-contacto" method="post">
+                        <div class="row del-padded">
+                            <div class="col col-50">
+                                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre"
+                                    required>
+                            </div>
+                            <div class="col col-50">
+                                <input type="text" id="apellido" name="apellido" class="form-control"
+                                    placeholder="Apellido" required>
+                            </div>
+                            <div class="col col-50">
+                                <input type="email" id="correo" name="correo" class="form-control"
+                                    placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="col col-50">
+                                <input type="tel" id="telefono" name="telefono" class="form-control"
+                                    placeholder="Teléfono" required>
+                            </div>
+                            <div class="col col-100">
+                                <textarea name="mensaje" id="mensaje" class="form-control" placeholder="Mensaje"
+                                    required rows="5"></textarea>
+                            </div>
+                            <div class="col col-100">
+                                <input type="text" name="captcha" id="captcha" class="form-control"
+                                    placeholder="Captcha 3+4=?" required>
+                            </div>
+                            <div class="col col-100">
+                                <input type="checkbox" id="acepto" required>
+                                <label for="acepto">Acepto los <a href="politica.html">Términos y
+                                        condiciones</a></label>
+                            </div>
+                            <div class="col col-100">
+                                <!-- Botón de envío -->
+                                <button type="submit" class="form-button">Enviar mensaje <i
+                                        class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Sección de información de contacto con íconos -->
+                <div class="col col-33 contacto-info">
+                    <div class="contacto-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Nuestras Sedes</h4>
+                            <p>Lima - Av Solidaridad<br>Villa el Salvador</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Correo Electrónico</h4>
+                            <p>Lima - lima@medio.com<br>informes@mueblesmaldonado.com</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Call Center</h4>
+                            <p>Lima - +51 47892195</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <h4>Horario de Atención</h4>
+                            <p>Lun - Sáb: 08:00 - 20:00<br>Domingos y Feriados: Cerrado</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- redes sociales -->
+    <section>
+        <div class=" espaciado con-linea2">
+            <div class="row3">
+                <div class="col col--25 redes-sociales">
+                    <a title="Síguenos en Facebook" href="https://www.facebook.com/muebles.maldonado" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="col col--25 redes-sociales">
+                    <a title="Síguenos en Instagram" href="https://www.instagram.com/muebles.maldonado/?hl=es"
+                        target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="col col--25 redes-sociales">
+                    <a title="Síguenos en YouTube" href="https://www.youtube.com/@mueblesmaldonado3211"
+                        target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="col col--25 redes-sociales">
+                    <a title="Síguenos en LinkedIn" href="https://www.linkedin.com/in/muebles-maldonado"
+                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- mapa de ubicacion -->
+    <section id="contacto-mapa">
+        <iframe class="imgfluid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.7208444606267!2d-76.93677079999999!3d-12.1993882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b943f9811969%3A0xb4feef9675a31bb5!2sMuebles%20Maldonado%20S.A.C!5e0!3m2!1ses-419!2spe!4v1730763556846!5m2!1ses-419!2spe"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+
+
+
+
+    <!-- Pie de página -->
+    <footer id="pie" class="espaciado con-linea">
+        <div class="contenedor  ">
+            <div class="row">
+                <span>&copy; Muebles Maldonado - todos los derechos reservados </span>
+                <div>
+                    <a title="Siguenos en Facebook" href="https://www.facebook.com/muebles.maldonado" target="_blank"><i
+                            class="fa-brands fa-facebook icono-rs"></i></a>
+                    <a title="Siguenos en Instagram" href="https://www.instagram.com/muebles.maldonado/?hl=es"
+                        target="_blank"><i class="fa-brands fa-instagram icono-rs"></i></a>
+                    <a title="Siguenos en Youtube" href="https://www.youtube.com/@mueblesmaldonado3211"
+                        target="_blank"><i class="fa-brands fa-youtube icono-rs"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-up">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+</body>
+
+
+
+</html>

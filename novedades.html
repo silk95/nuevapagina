@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muebles Maldonado</title>
+    <!-- enlazar html con favicon -->
+    <link rel="shortcut icon" href="css/imagenes/favicon.ico" type="image/x-icon">
+
+    <!-- Vinculación del archivo HTML con la hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- barra superior -->
+    <header id="barra-superior">
+        <div class="contenedor">
+            <div class="row">
+                <div class="bs-contactos">
+                    <a href="tel:998 199 406"><i class="fa-solid fa-phone fa-rotate-270 " style="color: #ff5351;"></i>
+                        998 199 406 </a>
+                    <a href="mailto:informes@mueblesmaldonado.com"> <i class="fa-regular fa-envelope"
+                            style="color: #ff5351;"></i> informes@mueblesmaldonado.com</a>
+                    <samp> <i class="fa-regular fa-clock" style="color: #ff5351;"></i> Lun -Sab: 10:00 a.m.6:00 p.m.
+                    </samp>
+                </div>
+
+                <div class="bs-rs">
+                    <a title="Siguenos en Facebook" href="https://www.facebook.com/muebles.maldonado" target="_blank"><i
+                            class="fa-brands fa-facebook "></i></a>
+                    <a title="Siguenos en Instagram" href="https://www.instagram.com/muebles.maldonado/?hl=es"
+                        target="_blank"><i class="fa-brands fa-instagram "></i></a>
+                    <a title="Siguenos en Youtube" href="https://www.youtube.com/@mueblesmaldonado3211"
+                        target="_blank"><i class="fa-brands fa-youtube "></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cabecera de la página -->
+    <header id="cabecera">
+        <div class="contenedor">
+            <!-- barra de navegacion: contiene el logo y lo enlaces de navegacion -->
+            <nav class="nav-bar">
+                <!-- contien el logo  -->
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img class="imgfluid" src="css/imagenes/logo3.png">
+                    </a>
+                    <!-- coniene el menu -->
+                </div>
+                <!-- elementos del menu -->
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="index.html"> <i class="fa-solid fa-house"></i> Inicio</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="categorias.html">Categorias</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link pagina-activa" href="novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="contactanos.html">Contáctanos</a>
+                    </li>
+
+                </ul><!-- cierra el nav-menu -->
+            </nav><!-- cierra el nav-bar -->
+
+            <!-- <h1> Muebles Maldonado</h1> -->
+        </div>
+    </header>
+
+    <!-- titulo de pagina interna -->
+    <section id="titulo-pagina" class="espaciado">
+        <div class="contenedor">
+            <h2>Novedades</h2>
+            <span><i class="fa-solid fa-location-dot"></i> <a href="index.html">inicio</a> / Novedades</span>
+        </div>
+
+    </section>
+    <!-- objeto video -->
+    <section id="video-novedades">
+        <video muted autoplay loop class="ajustar-video">
+            <source src="css/video/video-novedades.mp4" type="video/mp4">
+        </video>
+
+    </section>
+    <!-- presentacion de novedades -->
+    <section id="novedades" class="espaciado">
+        <div class="contenedor">
+            <h2>Novedades</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquid atque accusantium alias, quas est.
+            </p>
+            <div class="row del-padded">
+                <div class="col ">
+                    <iframe class="ajustar-video" width="560" height="315"
+                        src="https://www.youtube.com/embed/3Z1pI9yiNlY?si=jqiTNdLzA1yi9aAL" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="col">
+                    <iframe class="ajustar-video" width="560" height="315"
+                        src="https://www.youtube.com/embed/8Oa9EKaaQdU?si=WWUtM2Dz-TrG9rof" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Pie de página -->
+    <footer id="pie" class="espaciado con-linea">
+        <div class="contenedor  ">
+            <div class="row">
+                <span>&copy; Muebles Maldonado - todos los derechos reservados </span>
+                <div>
+                    <a title="Siguenos en Facebook" href="https://www.facebook.com/muebles.maldonado" target="_blank"><i
+                            class="fa-brands fa-facebook icono-rs"></i></a>
+                    <a title="Siguenos en Instagram" href="https://www.instagram.com/muebles.maldonado/?hl=es"
+                        target="_blank"><i class="fa-brands fa-instagram icono-rs"></i></a>
+                    <a title="Siguenos en Youtube" href="https://www.youtube.com/@mueblesmaldonado3211"
+                        target="_blank"><i class="fa-brands fa-youtube icono-rs"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-up">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+</body>
+
+
+
+</html>
