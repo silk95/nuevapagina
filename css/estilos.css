@@ -724,3 +724,30 @@ a{
 .view-all-btn i {
     font-size: 14px;
 }
+
+/* ESTILOS PARA DISEÑO WEB RESPONSIVE DE DIFERENTES TAMAÑOS DE DISPOSITIVOS */
+/* 1) PARA PANTALLAS GRANDES 1220PX */
+@media (max-width: 1220px) {
+       .contenedor{
+        max-width: 80%;  
+    }
+}
+/* 2) PARA PANTALLAS PEQUEÑAS COMO LAPTOPS  1024PX  */
+@media (max-width: 1024px) {
+  
+       
+}
+/* 3) PARA PANTALLAS DE TABLETAS 768PX  */
+@media (max-width: 768px) {
+    .contenedor{
+        max-width: 90%;  
+    }
+       
+}
+/* 4) PARA PANTALLAS DE MOBILES 480PX  */
+@media (max-width: 480px) {
+    .contenedor{
+        max-width: 95%;  
+    }
+       
+}
