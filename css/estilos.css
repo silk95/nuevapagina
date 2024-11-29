@@ -1017,7 +1017,12 @@ a {
     .service-item h3 {
         font-size: 10px;
     }
-    
+    .carousel-control.next{
+        top : 35%;
+    }
+    .carousel-control.prev{
+        top : 35%;
+    }
 
     /* Mostrar bordes de todas las cajas */
     /* * {
