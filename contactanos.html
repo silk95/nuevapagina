@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muebles Maldonado</title>
     <!-- enlazar html con favicon -->
     <link rel="shortcut icon" href="css/imagenes/favicon.ico" type="image/x-icon">
@@ -50,8 +50,14 @@
                     </a>
                     <!-- coniene el menu -->
                 </div>
+
+                 <!-- mostrar el incono del menu hambuguesa -->
+                 <div class="menu-toggle" id="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
                 <!-- elementos del menu -->
-                <ul class="nav-menu">
+                <ul class="nav-menu" id="nav-menu">
                     <li class="nav-menu-item">
                         <a class="nav-menu-link" href="index.html"> <i class="fa-solid fa-house"></i> Inicio</a>
                     </li>
@@ -225,8 +231,10 @@
     <a href="#" class="scroll-up">
         <i class="fa-solid fa-angle-up"></i>
     </a>
+
+        <!-- Vincular el HTML con el JS -->
+        <script src="js/toggle-menu.js"></script>
+        <script src="js/carousel.js"></script>
 </body>
-
-
 
 </html>

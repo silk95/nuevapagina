@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Muebles Maldonado</title>
     <!-- enlazar html con favicon -->
     <link rel="shortcut icon" href="css/imagenes/favicon.ico" type="image/x-icon">
@@ -52,8 +52,13 @@
                     </a>
                     <!-- coniene el menu -->
                 </div>
+                <!-- mostrar el incono del menu hambuguesa -->
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
                 <!-- elementos del menu -->
-                <ul class="nav-menu">
+                <ul class="nav-menu" id="nav-menu">
                     <li class="nav-menu-item">
                         <a class="nav-menu-link pagina-activa" href="index.html"> <i class="fa-solid fa-house"></i>
                             Inicio</a>
@@ -78,17 +83,41 @@
         </div>
     </header>
 
-    <!-- Sección del banner -->
-    <section id="banner">
-        <img src="css/imagenes/banner.jpg" alt="local" class="imgfluid">
+    <!-- Sección del carousel -->
+    <section class=" carousel-container">
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="css/imagenes/carrusel1.jpg" class="imgfluid">
+            </div>
+            <div class="carousel-item">
+                <img src="css/imagenes/carrusel2.jpg" class="imgfluid">
+            </div>
+            <div class="carousel-item">
+                <img src="css/imagenes/carrusel3.jpg" class="imgfluid">
+            </div>
+            <div class="carousel-item">
+                <img src="css/imagenes/carrusel4.jpg" class="imgfluid">
+            </div>
+        </div>
+
+        <button class="carousel-control prev" id="prevBtn"><i class="fa-solid fa-caret-left"></i>
+
+        </button>
+        <button class="carousel-control next" id="nextBtn"><i class="fa-solid fa-caret-right"></i>
+
+        </button>
+
+
+
+
     </section>
 
     <!-- Sección "Nosotros" -->
     <section id="Nosotros">
         <div class="row ">
             <div class="col espaciado">
-                <div class="contenedor "> 
-                 <h2>Quienes somos </h2>              
+                <div class="contenedor ">
+                    <h2>Quienes somos </h2>
                     <p>Para el nacimiento de Muebles Maldonado fue necesario y parte de su historia 2 etapas.
                         Se inicia gracias al esfuerzo, decisión y perseverancia de los esposos Maldonado. Se atrevierona
                         incursionar en el negocio con un capital mínimo y sobre todo muchas ganas y decisión de salir
@@ -106,10 +135,10 @@
                     </p>
                 </div>
             </div>
-                <div class="col fondo-nosotros">
-                    <h3 class="titulo-muebelesamedida"></h3>
-                </div>
+            <div class="col fondo-nosotros">
+                <h3 class="titulo-muebelesamedida"></h3>
             </div>
+        </div>
         </div>
 
     </section>
@@ -117,12 +146,13 @@
     <!-- Sectión " Muebles" -->
     <section class="nuevos-muebles">
         <div class="contenedor1">
-          <h1>Nuevos Muebles</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim, urna nec placerat, est sapien, et lacinia.</p>
-          <a href="#!" class="button">Descubre más</a>
+            <h1>Nuevos Muebles</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim, urna nec placerat, est sapien,
+                et lacinia.</p>
+            <a href="#!" class="button">Descubre más</a>
         </div>
-      </section>
-      
+    </section>
+
 
 
     <!-- Seccitón "Muebles destacados" -->
@@ -168,7 +198,7 @@
                 </div>
                 <div class="col col-33">
                     <div class="Muebles-padre ocultar-desborde">
-                        <img src="css/imagenes/comedor_muebles.jpg" alt=""class="imgfluid">
+                        <img src="css/imagenes/comedor_muebles.jpg" alt="" class="imgfluid">
                         <div class="Muebles-hijo">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing. <br>
                                 <i class="fa-brands fa-instagram fa-lg"></i>
@@ -179,7 +209,7 @@
                 </div>
                 <div class="col col-33">
                     <div class="Muebles-padre ocultar-desborde">
-                        <img src="css/imagenes/comedor_muebles.jpg" alt=""class="imgfluid">
+                        <img src="css/imagenes/comedor_muebles.jpg" alt="" class="imgfluid">
                         <div class="Muebles-hijo">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing. <br>
                                 <i class="fa-brands fa-instagram fa-lg"></i>
@@ -278,31 +308,34 @@
                     <div class="feature">
                         <i class="fa-solid fa-headset"></i>
                         <h4>Atención al Cliente</h4>
-                        <p>Nos dedicamos a ofrecer un servicio personalizado y de calidad, para que cada cliente se sienta especial.</p>
+                        <p>Nos dedicamos a ofrecer un servicio personalizado y de calidad, para que cada cliente se
+                            sienta especial.</p>
                     </div>
                     <div class="feature">
                         <i class="fa-solid fa-award"></i>
                         <h4>Experiencia</h4>
-                        <p>Contamos con años de experiencia que avalan nuestro conocimiento y habilidad en el sector.</p>
+                        <p>Contamos con años de experiencia que avalan nuestro conocimiento y habilidad en el sector.
+                        </p>
                     </div>
                     <div class="feature">
                         <i class="fa-solid fa-lightbulb"></i>
                         <h4>Innovación</h4>
-                        <p>Siempre estamos a la vanguardia, implementando las últimas tecnologías para mejorar nuestro servicio.</p>
+                        <p>Siempre estamos a la vanguardia, implementando las últimas tecnologías para mejorar nuestro
+                            servicio.</p>
                     </div>
                 </div>
-                
+
                 <!-- Columna 2: Video de YouTube -->
                 <div class="col col--50 video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8Oa9EKaaQdU?si=JPzFqTJY7bSyMuFO" 
-                            title="YouTube video player" frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8Oa9EKaaQdU?si=JPzFqTJY7bSyMuFO"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
-    
+
 
     <!-- Sección "Servicios" -->
     <section id="Servicios">
@@ -321,38 +354,39 @@
             </div>
         </div>
     </section>
-        <!-- nuestros servicios -->
-        <section class="services contenedor">
-            <h2>Nuestros Servicios</h2>
-            <p class="description">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia.</p>
-            
-            <div class="service-items">
-                <div class="service-item">
-                    <i class="fa-solid fa-comment-medical"></i>
-                    <h3>Asesoria</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fa-solid fa-plus"></i>
-                    <h3>Entrega puntual</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fa-brands fa-salesforce"></i>
-                    <h3>Venta de muebles puntual</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fa-solid fa-money-bill"></i>
-                    <h3>Precios competitivos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+    <!-- nuestros servicios -->
+    <section class="services contenedor">
+        <h2>Nuestros Servicios</h2>
+        <p class="description">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur non nulla
+            sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia.</p>
+
+        <div class="service-items">
+            <div class="service-item">
+                <i class="fa-solid fa-comment-medical"></i>
+                <h3>Asesoria</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-    
-            <a href="#" class="view-all-btn">
-                <span>Ver Todos los Servicios</span> <i class="fas fa-arrow-right"></i>
-            </a>
-        </section>
+            <div class="service-item">
+                <i class="fa-solid fa-plus"></i>
+                <h3>Entrega puntual</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service-item">
+                <i class="fa-brands fa-salesforce"></i>
+                <h3>Venta de muebles puntual</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-money-bill"></i>
+                <h3>Precios competitivos</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <a href="#" class="view-all-btn">
+            <span>Ver Todos los Servicios</span> <i class="fas fa-arrow-right"></i>
+        </a>
+    </section>
 
     <!-- Sección "Personalización" -->
     <section id="Personalizacion" class="espaciado fondo-personalizacion">
@@ -473,6 +507,10 @@
     <a href="#" class="scroll-up">
         <i class="fa-solid fa-angle-up"></i>
     </a>
+    <!-- Vincular el HTML con el JS -->
+    <script src="js/toggle-menu.js"></script>
+    <script src="js/carousel.js"></script>
+
 </body>
 
 </html>
